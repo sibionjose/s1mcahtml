@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Predefined Functions: String and Math Objects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 5px;
+            border-radius: 4px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+
+<h1>JavaScript Predefined Functions</h1>
+
+<h2>String Object</h2>
+<p>The String object in JavaScript allows you to work with strings in various ways. Here are some commonly used predefined functions:</p>
+
+<ul>
+    <li>
+        <strong><code>String.length</code></strong>
+        <p>Returns the length of the string.</p>
+        <pre><code>let str = "Hello, World!";
+console.log(str.length); // 13</code></pre>
+    </li>
+    <li>
+        <strong><code>String.toUpperCase()</code></strong>
+        <p>Converts the string to uppercase.</p>
+        <pre><code>let str = "hello";
+console.log(str.toUpperCase()); // HELLO</code></pre>
+    </li>
+    <li>
+        <strong><code>String.toLowerCase()</code></strong>
+        <p>Converts the string to lowercase.</p>
+        <pre><code>let str = "HELLO";
+console.log(str.toLowerCase()); // hello</code></pre>
+    </li>
+    <li>
+        <strong><code>String.substring(start, end)</code></strong>
+        <p>Returns a part of the string between the specified indices.</p>
+        <pre><code>let str = "Hello, World!";
+console.log(str.substring(0, 5)); // Hello</code></pre>
+    </li>
+    <li>
+        <strong><code>String.split(separator)</code></strong>
+        <p>Splits the string into an array of substrings based on the specified separator.</p>
+        <pre><code>let str = "apple,banana,cherry";
+console.log(str.split(",")); // ['apple', 'banana', 'cherry']</code></pre>
+    </li>
+</ul>
+
+<h2>Math Object</h2>
+<p>The Math object provides various mathematical functions and constants. Here are some commonly used functions:</p>
+
+<ul>
+    <li>
+        <strong><code>Math.max(...values)</code></strong>
+        <p>Returns the largest of the given numbers.</p>
+        <pre><code>console.log(Math.max(1, 2, 3)); // 3</code></pre>
+    </li>
+    <li>
+        <strong><code>Math.min(...values)</code></strong>
+        <p>Returns the smallest of the given numbers.</p>
+        <pre><code>console.log(Math.min(1, 2, 3)); // 1</code></pre>
+    </li>
+    <li>
+        <strong><code>Math.random()</code></strong>
+        <p>Returns a random floating-point number between 0 (inclusive) and 1 (exclusive).</p>
+        <pre><code>console.log(Math.random()); // e.g., 0.123456789</code></pre>
+    </li>
+    <li>
+        <strong><code>Math.floor(x)</code></strong>
+        <p>Rounds down x to the nearest integer.</p>
+        <pre><code>console.log(Math.floor(5.7)); // 5</code></pre>
+    </li>
+    <li>
+        <strong><code>Math.ceil(x)</code></strong>
+        <p>Rounds up x to the nearest integer.</p>
+        <pre><code>console.log(Math.ceil(5.1)); // 6</code></pre>
+    </li>
+    <li>
+        <strong><code>Math.sqrt(x)</code></strong>
+        <p>Returns the square root of x.</p>
+        <pre><code>console.log(Math.sqrt(16)); // 4</code></pre>
+    </li>
+</ul>
+
+</body>
+</html>

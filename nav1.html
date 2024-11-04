@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frames Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        #navigation {
+            width: 200px;
+            height: 100vh;
+            float: left;
+            background-color: #f4f4f4;
+            border-right: 2px solid #ccc;
+        }
+        #content {
+            margin-left: 200px;
+            padding: 20px;
+        }
+        #floating-frame {
+            border: 1px solid #ccc;
+            width: 300px;
+            height: 200px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #eaeaea;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Frame -->
+    <div id="navigation">
+        <h3>Navigation</h3>
+        <ul>
+            <li><a href="#section1" onclick="loadContent('Section 1 Content')">Section 1</a></li>
+            <li><a href="#section2" onclick="loadContent('Section 2 Content')">Section 2</a></li>
+            <li><a href="#section3" onclick="loadContent('Section 3 Content')">Section 3</a></li>
+        </ul>
+    </div>
+
+    <!-- Content Frame -->
+    <div id="content">
+        <h2>Content Area</h2>
+        <p id="dynamic-content">Please select a section from the navigation.</p>
+    </div>
+
+    <!-- Floating Frame -->
+    <div id="floating-frame">
+        <h4>Floating Frame</h4>
+        <p>This frame floats over the content.</p>
+    </div>
+
+    <script>
+        function loadContent(content) {
+            document.getElementById('dynamic-content').innerText = content;
+        }
+    </script>
+
+</body>
+</html>
